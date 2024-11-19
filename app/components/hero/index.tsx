@@ -9,7 +9,7 @@ import { Button } from "../shared/Button";
 export const Hero: React.FC = () => {
   return (
     <div className="relative h-fit">
-      <section className="container min-h-screen flex justify-center items-center mx-auto relative">
+      <section className="container px-4 md:px-10 lg:px-20 min-h-screen flex justify-center items-center mx-auto relative">
         <div className="flex flex-col-reverse">
           <div className="flex flex-col gap-[30px]">
             <h1
@@ -24,8 +24,12 @@ export const Hero: React.FC = () => {
               and essential tools to effectively engage with their customers.
             </h2>
             <div className="flex gap-[30px] justify-center">
-              <Button className="h-[50px]" variant="dark">Create a free account</Button>
-              <Button className="h-[50px]" variant="outlined">Contact Sales</Button>
+              <Button className="h-[50px]" variant="dark">
+                Create a free account
+              </Button>
+              <Button className="h-[50px]" variant="outlined">
+                Contact Sales
+              </Button>
             </div>
           </div>
           <p
@@ -37,8 +41,22 @@ export const Hero: React.FC = () => {
           </p>
         </div>
       </section>
-        <Image src={device} alt="#" width={929} height={1974} aria-hidden className="hidden lg:block absolute left-0 top-1/4 h-[410px] w-auto" />
-        <Image src={cards} alt="#" width={972} height={1406} aria-hidden className="hidden lg:block absolute right-0 top-1/4 h-[450px] w-auto" />
+      <Image
+        src={device}
+        alt="#"
+        width={929}
+        height={1974}
+        aria-hidden
+        className="hidden lg:block absolute left-0 top-1/4 h-[410px] w-auto"
+      />
+      <Image
+        src={cards}
+        alt="#"
+        width={972}
+        height={1406}
+        aria-hidden
+        className="hidden lg:block absolute right-0 top-1/4 h-[450px] w-auto"
+      />
     </div>
   );
 };

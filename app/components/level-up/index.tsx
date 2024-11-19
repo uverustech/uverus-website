@@ -69,7 +69,7 @@ export const LevelUp = () => {
   ];
   return (
     <section className="pt-100">
-      <div className="container mx-auto">
+      <div className="container px-4 md:px-10 lg:px-20 mx-auto">
         <h3
           className={`${sfProBold.className} level-up text-primary text-[55px]`}
         >
