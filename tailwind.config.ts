@@ -9,10 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        primary: 'FF3333',
+        primary: '#FF3333',
+        dark: "#232222",
+        light: "#FCFCFC",
       },
+      backgroundImage: {
+        'dark-gradient': "url('/dark-gradient.webp')",
+        'category-bg': "url('/category-bg.png')",
+        'category-bg-active': "url('/category-bg-active.png')"
+      }
     },
   },
   plugins: [],
