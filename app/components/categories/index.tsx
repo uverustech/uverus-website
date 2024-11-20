@@ -36,15 +36,15 @@ export const Categories = () => {
 
   return (
     <section className="py-[250px] bg-primary/5">
-      <div className="container px-4 md:px-10 lg:px-20 mx-auto flex flex-col gap-10">
+      <div className="container mx-auto flex flex-col gap-10">
         <h2
-          className={`${sfProSemibold.className} font-semibold max-w-[22ch] text-dark text-[55px] leading-[70px] text-center self-center`}
+          className={`${sfProSemibold.className} font-semibold max-w-[22ch] text-dark text-[30px] md:text-[55px] leading-10 md:leading-[70px] text-center self-center px-4 lg:px-10`}
         >
           {" "}
-          Get the Most Powerful and <br />
+          Get the Most Powerful and <br className="hidden md:block" />
           <span className="text-primary">Easy to Use</span> Payment Software
         </h2>
-        <div className="flex justify-center items-center gap-6">
+        <div className="flex justify-center items-center gap-2 sm:gap-4 md:gap-6">
           {categories.map((c, idx) => (
             <button
               key={idx}
@@ -53,21 +53,21 @@ export const Categories = () => {
                 activeCategory === c
                   ? "bg-primary/10 text-primary"
                   : "bg-white text-[#232222]"
-              } rounded-full h-[50px] px-8 flex items-center transition duration-200`}
+              } rounded-full h-[35px] md:h-[50px] px-4 sm:px-6 md:px-8 flex items-center transition duration-200 text-xs md:text-base whitespace-nowrap`}
             >
               {c}
             </button>
           ))}
         </div>
-        <div className="flex relative max-w-7xl mx-auto mt-[105px]">
+        <div className="flex relative max-w-7xl mx-auto mt-[105px] h-full ">
           {categoriesData.map((category, idx) => (
             <div
               key={idx}
               className={`${
                 category.title === activeCategory
-                  ? "scale-110 z-50 absolute left-1/2 -translate-x-1/2"
+                  ? "scale-110 z-50 absolute left-1/2 -translate-x-1/2 px-6"
                   : "scale-100"
-              } transition duration-200 bg-white rounded-[18px] w-full max-w-[301px] md:max-w-[441px] h-full  pt-6 px-6`}
+              } transition duration-200 bg-white rounded-[18px] w-full max-w-[231px] sm:max-w-[301px] md:max-w-[441px] h-full pt-6 md:px-6`}
             >
               <div>
                 <div>

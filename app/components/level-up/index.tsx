@@ -69,18 +69,18 @@ export const LevelUp = () => {
   ];
   return (
     <section className="pt-100">
-      <div className="container px-4 md:px-10 lg:px-20 mx-auto">
+      <div className="container px-4 lg:px-10 mx-auto">
         <h3
-          className={`${sfProBold.className} level-up text-primary text-[55px]`}
+          className={`${sfProBold.className} level-up flex w-fit text-primary text-xl sm:text-[30px] md:text-[55px] leading-loose md:leading-relaxed`}
         >
           Level up
         </h3>
         <div className="flex">
-          <div className="w-[215px] h-full mt-auto">
-            <Image src={withUverus} alt="With Uverus" className="" />
+          <div className="w-20 sm:w-[130px] md:w-[215px] md:h-full md:min-h-20 mt-2 md:mt-auto flex items-end">
+            <Image src={withUverus} alt="With Uverus" className="h-7 sm:h-10 md:h-auto w-auto" />
           </div>
           <h3
-            className={`${sfProSemibold.className} your-business text-[55px] pl-8 -mt-[10px]`}
+            className={`${sfProSemibold.className} your-business text-xl sm:text-[30px] md:text-[55px] pl-4 md:pl-8 -mt-[5.75px] md:-mt-[10px]`}
           >
             Your Business
           </h3>

@@ -47,9 +47,9 @@
   bottom: 0;
   left: 0;
   background-color: #FF3333;
-  width: 215px;
-  height: 10px;
-  border-radius: 10px 0px 0px 10px;
+  width: 80px;
+  height: 5.75px;
+  border-radius: 5.75px 0px 0px 5.75px;
 }
 
 .your-business {
@@ -61,9 +61,9 @@
   top: 0;
   left: 0;
   background-color: #FF3333;
-  width: 10px;
-  height: 80px;
-  border-radius: 0px 10px 0px 10px;
+  width: 5.75px;
+  height: 40px;
+  border-radius: 0px 5.75px 0px 5.75px;
 }
 .your-business::after {
   content: "";
@@ -71,9 +71,45 @@
   bottom: 0;
   left: 0;
   background-color: #FF3333;
-  width: 387px;
-  height: 10px;
-  border-radius: 0px 10px 10px 10px;
+  width: 148px;
+  height: 5.75px;
+  border-radius: 0px 5.75px 5.75px 5.75px;
+}
+
+@media (min-width: 640px) {
+  .level-up::before {
+    width: 130px;
+    height: 5.75px;
+    border-radius: 5.75px 0px 0px 5.75px;
+  }
+  
+  .your-business::before {
+    width: 5.75px;
+    height: 54px;
+    border-radius: 0px 5.75px 0px 5.75px;
+  }
+  .your-business::after {
+    width: 218px;
+    height: 5.75px;
+    border-radius: 0px 5.75px 5.75px 5.75px;
+  }
+}
+@media (min-width: 768px) {
+  .level-up::before {
+    width: 215px;
+    height: 10px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .your-business::before {
+    width: 10px;
+    height: 90px;
+    border-radius: 0px 10px 0px 10px;
+  }
+  .your-business::after {
+    width: 387px;
+    height: 10px;
+    border-radius: 0px 10px 10px 10px;
+  }
 }
 
 .react-multi-carousel-track {
