@@ -35,7 +35,7 @@ export const Categories = () => {
   ];
 
   return (
-    <section className="py-[250px] bg-primary/5">
+    <section className="py-[100px] md:py-[250px] bg-primary/5">
       <div className="container mx-auto flex flex-col gap-10">
         <h2
           className={`${sfProSemibold.className} font-semibold max-w-[22ch] text-dark text-[30px] md:text-[55px] leading-10 md:leading-[70px] text-center self-center px-4 lg:px-10`}
@@ -59,15 +59,15 @@ export const Categories = () => {
             </button>
           ))}
         </div>
-        <div className="flex relative max-w-7xl mx-auto mt-[105px] h-full ">
+        <div className="flex relative max-w-7xl mx-auto mt-[55px] md:mt-[105px] h-full ">
           {categoriesData.map((category, idx) => (
             <div
               key={idx}
               className={`${
                 category.title === activeCategory
-                  ? "scale-110 z-50 absolute left-1/2 -translate-x-1/2 px-6"
+                  ? "scale-110 z-50 absolute left-1/2 -translate-x-1/2 px-4 md:px-6"
                   : "scale-100"
-              } transition duration-200 bg-white rounded-[18px] w-full max-w-[231px] sm:max-w-[301px] md:max-w-[441px] h-full pt-6 md:px-6`}
+              } transition duration-200 bg-white rounded-[18px] w-full max-w-[231px] sm:max-w-[301px] md:max-w-[441px] h-full pt-4 md:pt-6 md:px-6`}
             >
               <div>
                 <div>
@@ -76,7 +76,7 @@ export const Categories = () => {
                     alt={category.alt}
                     width={392}
                     height={401}
-                    unoptimized
+                    className="rounded-t-[10px]"
                   />
                 </div>
                 <div
@@ -84,20 +84,20 @@ export const Categories = () => {
                     category.title === activeCategory
                       ? "bg-category-bg-active"
                       : "bg-category-bg"
-                  } px-[18px] pt-[21px] pb-7 bg-cover text-white`}
+                  } px-[18px] pt-[21px] pb-7 bg-cover text-white rounded-b-[10px]`}
                 >
-                  <div className="w-[60px] h-[60px] bg-white rounded-full flex justify-center items-center">
+                  <div className="w-11 md:w-[60px] h-11 md:h-[60px] bg-white rounded-full flex justify-center items-center mb-[14px]">
                     <ProfileTick />
                   </div>
-                  <h3 className={`${sfProSemibold} text-2xl`}>
+                  <h3 className={`${sfProSemibold} text-xs md:text-2xl mb-2`}>
                     {category.title}
                   </h3>
-                  <p>{category.description}</p>
+                  <p className="text-[8px] md:text-base">{category.description}</p>
                 </div>
               </div>
               <div className="flex justify-end">
                 <button
-                  className={`${sfProSemibold.className} bg-[#232222] text-white px-[14px] rounded-full h-8 text-xs font-semibold my-3`}
+                  className={`${sfProSemibold.className} bg-[#232222] text-white px-[7px] md:px-[14px] rounded-full h-[17px] md:h-8 text-[6px] md:text-xs font-semibold my-1.5 md:my-3`}
                 >
                   Learn More
                 </button>

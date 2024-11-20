@@ -61,7 +61,7 @@ export const Footer = () => {
     { label: "X (formerly Twitter)", href: "https://x.com/", icon: <XIcon /> },
   ];
   return (
-    <footer className="flex flex-col pt-[150px] pb-[60px]">
+    <footer className="flex flex-col pt-[100px] md:pt-[150px] pb-9 md:pb-[60px]">
       <div className="container px-4 lg:px-10 mx-auto grid grid-cols-12 gap-y-8 md:gap-8 justify-between">
         <div className="col-span-12 md:col-span-4 flex flex-col gap-12 md:mr-auto order-2 md:order-1">
           <p className="text-[#6B7280] text-xl order-2 md:order-1">

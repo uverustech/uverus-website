@@ -68,7 +68,7 @@ export const LevelUp = () => {
     },
   ];
   return (
-    <section className="pt-100">
+    <section className="pt-20 md:pt-[100px]">
       <div className="container px-4 lg:px-10 mx-auto">
         <h3
           className={`${sfProBold.className} level-up flex w-fit text-primary text-xl sm:text-[30px] md:text-[55px] leading-loose md:leading-relaxed`}
@@ -86,7 +86,7 @@ export const LevelUp = () => {
           </h3>
         </div>
       </div>
-      <div className="mt-[100px]">
+      <div className="mt-20 md:mt-[100px]">
         <LevelUpCarousel>
           {Features.map((feature, idx) => (
             <div

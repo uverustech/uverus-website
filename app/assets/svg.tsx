@@ -292,6 +292,7 @@ export const XIcon = () => {
 export const ProfileTick = () => {
   return (
     <svg
+    className="w-4 h-4 md:w-full h-full"
     xmlns="http://www.w3.org/2000/svg"
     width="32"
     height="32"
