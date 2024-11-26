@@ -65,7 +65,7 @@ export const Categories = () => {
               key={idx}
               className={`${
                 category.title === activeCategory
-                  ? "scale-110 z-50 absolute left-1/2 -translate-x-1/2 px-4 md:px-6"
+                  ? "scale-110 z-40 absolute left-1/2 -translate-x-1/2 px-4 md:px-6"
                   : "scale-100"
               } transition duration-200 bg-white rounded-[18px] w-full max-w-[231px] sm:max-w-[301px] md:max-w-[441px] h-full pt-4 md:pt-6 md:px-6`}
             >
@@ -86,7 +86,7 @@ export const Categories = () => {
                       : "bg-category-bg"
                   } px-[18px] pt-[21px] pb-7 bg-cover text-white rounded-b-[10px]`}
                 >
-                  <div className="w-11 md:w-[60px] h-11 md:h-[60px] bg-white rounded-full flex justify-center items-center mb-[14px]">
+                  <div className="w-11 md:w-[60px] p-4 h-11 md:h-[60px] bg-white rounded-full flex justify-center items-center mb-[14px]">
                     <ProfileTick />
                   </div>
                   <h3 className={`${sfProSemibold} text-xs md:text-2xl mb-2`}>

@@ -5,13 +5,12 @@ import { TrustedBy } from "@/app/components/trusted-by";
 import { Categories } from "@/app/components/categories";
 import { Newsletter } from "@/app/components/newsletter";
 import { Footer } from "@/app/components/footer";
+import { Navbar } from "./components/navbar";
 
 export default function Home() {
   return (
     <>
-    <header>
-      <nav></nav>
-    </header>
+    <Navbar />
     <main>
       <Hero />
       <LevelUp />

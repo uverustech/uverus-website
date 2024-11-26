@@ -8,7 +8,7 @@ import { Button } from "../shared/Button";
 
 export const Hero: React.FC = () => {
   return (
-    <div className="relative h-fit bg-primary/5 pb-6 md:pb-[100px]">
+    <div className="relative h-fit bg-primary/5 bg-map-mobile md:bg-map bg-center pb-6 md:pb-[100px]">
       <section className="container px-4 lg:px-10 min-h-[80vh] flex justify-center items-center mx-auto relative pt-[98px]">
         <div className="flex flex-col-reverse">
           <div className="flex flex-col gap-8 md:gap-[30px]">

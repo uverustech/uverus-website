@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { sfProRegular } from "./fonts";
+import ScrollProvider from "./contexts/scroll-context";
 
 export const metadata: Metadata = {
   title: "UverUs: Financial Infrastructure for African Businesses",
@@ -17,7 +18,9 @@ export default function RootLayout({
       <body
         className={`${sfProRegular.className} antialiased`}
       >
+        <ScrollProvider>
         {children}
+        </ScrollProvider>
       </body>
     </html>
   );
