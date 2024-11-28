@@ -13,11 +13,11 @@ export const Footer = () => {
   const homeLinks = [
     {
       label: "About Us",
-      url: "/about",
+      url: "/#about",
     },
     {
       label: "Products",
-      url: "/products",
+      url: "/#products",
     },
     {
       label: "Contact Us",
@@ -31,15 +31,15 @@ export const Footer = () => {
   const developerLinks = [
     {
       label: "Overview",
-      url: "/overview",
+      url: "/#overview",
     },
     {
       label: "Documentation",
-      url: "/documentation",
+      url: "/#documentation",
     },
     {
       label: "Integration",
-      url: "/integration",
+      url: "/#integration",
     },
   ];
   const socialLinks = [
