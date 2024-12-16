@@ -16,10 +16,6 @@ export const Footer = () => {
       url: "/#about",
     },
     {
-      label: "Products",
-      url: "/#products",
-    },
-    {
       label: "Contact Us",
       url: "/contact",
     },
@@ -74,7 +70,6 @@ export const Footer = () => {
             className="max-w-[184px] md:max-w-[200px] order-1 md:order-2"
           />
         </div>
-        {/* <div className="col-span-1"></div> */}
         <div className="col-span-12 md:col-span-3 lg:col-start-6 flex justify-between gap-4 order-1 md:order-2">
           <div>
             <p

@@ -25,7 +25,6 @@ export const Navbar = () => {
           href={"/"}
           className="font-bold text-sm md:text-lg uppercase flex items-center gap-1 z-50"
         >
-          
           <UverusLogo />
         </Link>
         <ul className={`${isNavOpened? "translate-x-0": "-translate-x-full"} md:translate-x-0 transition duration-200 text-secondary flex flex-col md:flex-row items-center gap-14 md:gap-5 fixed md:relative top-0 left-0 pt-28 md:pt-0 pr-4 md:pr-10 lg:pr-20 w-full md:w-auto h-screen md:h-fit bg-white md:bg-transparent bg-opacity-20 md:bg-opacity-100 backdrop-blur-md md:backdrop-blur-0`}>

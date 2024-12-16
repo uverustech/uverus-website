@@ -68,6 +68,7 @@ export const Categories = () => {
                   ? "scale-110 z-40 absolute left-1/2 -translate-x-1/2 px-4 md:px-6"
                   : "scale-100"
               } transition duration-200 bg-white rounded-[18px] w-full max-w-[231px] sm:max-w-[301px] md:max-w-[441px] h-full pt-4 md:pt-6 md:px-6`}
+              onClick={() => setActiveCategory(category.title)}
             >
               <div>
                 <div>
