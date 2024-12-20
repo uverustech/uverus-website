@@ -1,3 +1,4 @@
+'use client'
 import { ArrowRight } from "@/app/assets/svg";
 import { CustomInput } from "@/app/components/custom-input";
 import { Button } from "@/app/components/shared/Button";
