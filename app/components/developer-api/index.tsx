@@ -7,7 +7,7 @@ export const DeveloperAPI = () => {
     <section className="container px-4 lg:px-10 mx-auto flex flex-col md:flex-row justify-between py-[100px] md:py-[250px] gap-[60px] md:gap-10">
       <div className="w-full md:w-1/2 flex flex-col gap-[36px]">
         <h2
-          className={`${sfProSemibold.className} max-w-[18ch] text-dark text-[30px] md:text-[55px] leading-10 md:leading-[70px] self-center text-center md:text-left`}
+          className={`${sfProSemibold.className} max-w-[18ch] text-dark text-[30px] md:text-[55px] leading-10 md:leading-[70px] mx-auto md:mx-0 text-center md:text-left`}
         >
           {" "}
           <span className="text-primary">Effortless</span> Custom Payments with{" "}

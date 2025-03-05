@@ -10,10 +10,12 @@
     "deploy": "next build && touch out/.nojekyll && gh-pages -d out"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "next": "14.2.15",
     "react": "^18",
     "react-dom": "^18",
-    "react-multi-carousel": "^2.8.5"
+    "react-multi-carousel": "^2.8.5",
+    "react-toastify": "^11.0.2"
   },
   "devDependencies": {
     "@types/node": "^20",

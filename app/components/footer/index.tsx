@@ -13,11 +13,7 @@ export const Footer = () => {
   const homeLinks = [
     {
       label: "About Us",
-      url: "/about",
-    },
-    {
-      label: "Products",
-      url: "/products",
+      url: "/#about",
     },
     {
       label: "Contact Us",
@@ -31,15 +27,15 @@ export const Footer = () => {
   const developerLinks = [
     {
       label: "Overview",
-      url: "/overview",
+      url: "/#overview",
     },
     {
       label: "Documentation",
-      url: "/documentation",
+      url: "/#documentation",
     },
     {
       label: "Integration",
-      url: "/integration",
+      url: "/#integration",
     },
   ];
   const socialLinks = [
@@ -74,7 +70,6 @@ export const Footer = () => {
             className="max-w-[184px] md:max-w-[200px] order-1 md:order-2"
           />
         </div>
-        {/* <div className="col-span-1"></div> */}
         <div className="col-span-12 md:col-span-3 lg:col-start-6 flex justify-between gap-4 order-1 md:order-2">
           <div>
             <p

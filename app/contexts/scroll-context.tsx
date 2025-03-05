@@ -14,7 +14,7 @@ const ScrollProvider = ({ children }: {children: React.ReactNode}) => {
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isScrolled]);
 
   return (
     <ScrollContext.Provider value={isScrolled}>
