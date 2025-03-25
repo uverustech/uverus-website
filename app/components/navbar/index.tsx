@@ -29,7 +29,7 @@ export const Navbar = () => {
         </Link>
         <ul className={`${isNavOpened? "translate-x-0": "-translate-x-full"} md:translate-x-0 transition duration-200 text-secondary flex flex-col md:flex-row items-center gap-14 md:gap-5 fixed md:relative top-0 left-0 pt-28 md:pt-0 pr-4 md:pr-10 lg:pr-20 w-full md:w-auto h-screen md:h-fit bg-white md:bg-transparent bg-opacity-20 md:bg-opacity-100 backdrop-blur-md md:backdrop-blur-0`}>
           {navLinks.map((link, idx) => (
-            link.label === "Get Started"? <Button variant="dark" className="h-fit min-h-14 text-[28px] md:text-base" key={idx}>{link.label}</Button>:
+            link.label === "Get Started"? <Button variant="dark" className="h-fit min-h-14 md:min-h-10 text-[28px] md:text-base" key={idx}>{link.label}</Button>:
             <li key={idx} onClick={()=>setIsNavOpened(!isNavOpened)} className={`text-secondary font-light md:font-medium text-[28px] md:text-base hover:underline underline-offset-4 transition duration-200`}>
               <Link href={link.href}>{link.label}</Link>
             </li>
