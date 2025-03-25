@@ -6,6 +6,7 @@ import { ReactNode } from "react";
 interface ButtonProps {
   children: ReactNode;
   className?: string;
+  linkClassName?: string;
   disabled?: boolean;
   fullWidth?: boolean;
   href?: string;
@@ -19,6 +20,7 @@ interface ButtonProps {
 export const Button: React.FC<ButtonProps> = ({
   children,
   className,
+  linkClassName,
   disabled,
   fullWidth = false,
   href,
@@ -49,10 +51,12 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={disabled}
       className={`${graphikMedium.className} ${className} ${fullWidth ? "w-full" : "w-fit"} ${
         variantStyles[variant]
-      } px-[1.125rem] rounded-lg transition-all`}
+      } 
+      ${linkClassName ? "": 'px-[1.125rem]'}
+       rounded-lg transition-all`}
     >
       {href ? (
-        <Link href={href}>{loading ? <LoadingIndicator /> : children}</Link>
+        <Link href={href} className={`inline-flex items-center justify-center ${linkClassName}`}>{loading ? <LoadingIndicator /> : children}</Link>
       ) : (
         <>{loading ? <LoadingIndicator /> : children}</>
       )}
