@@ -18,7 +18,7 @@ export const CareerHero: React.FC = () => {
               className={`${sfProRegular.className} text-lg md:text-xl text-center text-dark max-w-[55ch] mx-auto`}
             >
               We know that finding a meaningful and rewarding job can be a long journey. 
-              Our goal is to make that process as easy as possible for you, and to create a work environment that's satisfying - one where you'll look forward to coming to every day. 
+              Our goal is to make that process as easy as possible for you, and to create a work environment that&apos;s satisfying - one where you&apos;ll look forward to coming to every day. 
               Start your journey with us by browsing available jobs.
             </h2>
             <div className="flex flex-col md:flex-row gap-8 md:gap-[30px] justify-center items-center">
