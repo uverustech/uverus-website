@@ -1,17 +1,50 @@
 'use client'
-import { useState } from 'react';
 import Link from 'next/link';
-import Image from "next/image";
-import { sfProSemibold } from "@/app/fonts";
-
+import { useState } from 'react';
+import { CareerHero } from '@/app/components/career-hero';
 
 const jobListings = [
   {
     id: 'frontend-developer-react-nextjs',
     title: 'Frontend Developer - React/NextJS',
     location: 'Abuja, Nigeria (Onsite)',
-    description: 'We are looking for a skilled React/Next.js Developer with experience in fintech applications and real-time systems.',
-    image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+    description: 'We are looking for a skilled React/Next.js Developer with experience in fintech applications and real-time systems such as games or streaming...',
+    url: 'https://uverus.zohorecruit.com/jobs/Careers/811684000000518935/Frontend-Developer---React-NextJS?source=CareerSite',
+  },
+  {
+    id: '2',
+    title: 'Backend Developer - Python',
+    location: 'Abuja, Nigeria (Onsite)',
+    description: 'We are seeking a skilled Python Developer with experience integrating AI/ML systems and APIs, and exposing functionality via first-party APIs. In this...',
+    url: 'https://uverus.zohorecruit.com/jobs/Careers/811684000000523049/Backend-Developer---Python?source=CareerSite'
+  },
+  {
+    id: '3',
+    title: "Backend Developer - PHP/Laravel",
+    location: "Abuja, Nigeria (Onsite)",
+    description: "We are seeking an experienced PHP Developer with Laravel expertise to join our engineering team. In this role, you'll work on building and maintaining...",
+    url: "https://uverus.zohorecruit.com/jobs/Careers/811684000000523075/Backend-Developer---PHP-Laravel?source=CareerSite"
+  },
+  {
+    id: '4',
+    title: "Blockchain Developer",
+    location: "Abuja, Nigeria (Onsite)",
+    description: "We are seeking an experienced Blockchain Developer with expertise in Solana development to join our innovative team. In this role, you will be respons...",
+    url: "https://uverus.zohorecruit.com/jobs/Careers/811684000000523096/Blockchain-Developer?source=CareerSite"
+  },
+  {
+    id: '5',
+    title: "Technical Assistant",
+    location: "Remote",
+    description: "Publish engaging blog posts on company products, industry trends, and technical topics Compose and send broadcast emails to our subscriber base using ...",
+    url: "https://uverus.zohorecruit.com/jobs/Careers/811684000000523121/Technical-Assistant?source=CareerSite"
+  },
+  {
+    id: '6',
+    title: "Product Manager",
+    location: "Abuja, Nigeria (Onsite)",
+    description: "We are seeking a Product Manager to drive the strategy, development, and execution of our social, gaming and Web3 products. As a key leader, you will ...",
+    url: "https://uverus.zohorecruit.com/jobs/Careers/811684000000523153/Product-Manager?source=CareerSite"
   },
 ];
 
@@ -19,28 +52,18 @@ export default function Careers() {
   const [jobs] = useState(jobListings);
 
   return (
-    <section className="container mx-auto px-4 lg:px-10 pt-[104px] h-full min-h-[80vh] md:min-h-screen">
-      <div className="text-center flex flex-col items-center gap-6 mb-10">
-      <h1
-            className={`${sfProSemibold.className} text-[30px] md:text-[55px] leading-10 md:leading-[70px] text-center max-w-[19ch] mx-auto`}
-        >
-            Come work with Us
-        </h1>
-        <p className="text-xl text-[#232222] text-center">
-          We&apos;re looking for passionate people to join us on our mission
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+    <>
+    <CareerHero />
+    <section className="container mx-auto px-4 lg:px-10 py-16 md:py-[104px] h-full" id="openings">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {jobs.length > 0 ? (
           jobs.map((job) => (
             <div key={job.id} className="bg-white shadow-lg rounded-lg border overflow-hidden">
-              <Image src={job.image} alt={job.title} width={1470} height={980} className="w-full h-48 object-cover" unoptimized />
               <div className="p-6">
                 <h3 className="text-xl font-semibold">{job.title}</h3>
                 <p className="text-gray-600 text-sm mb-2">{job.location}</p>
-                <p className="text-gray-700 mb-4">{job.description}</p>
-                <Link href={`/careers/${job.id}`} className="text-primary hover:underline font-semibold">
+                <p className="text-gray-700 mb-4 line-clamp-3">{job.description}</p>
+                <Link href={`${job.url}`} target='_blank' className="text-primary hover:underline font-semibold">
                   Learn More →
                 </Link>
               </div>
@@ -53,6 +76,7 @@ export default function Careers() {
         )}
       </div>
     </section>
+    </>
   );
 }
 
