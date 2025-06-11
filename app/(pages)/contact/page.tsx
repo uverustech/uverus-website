@@ -96,7 +96,7 @@ export default function Contact() {
   };
 
   const contactData = [
-    { name: "Location", value: "Wuse, Abuja" },
+    { name: "Location", value: "102 Behind Dunamis Church, Lugbe, Abuja" },
     {
       name: "Email Address",
       value: "info@uverus.com",
@@ -104,8 +104,8 @@ export default function Contact() {
     },
     {
       name: "Contact Numbers",
-      value: "(+234) 797-536-345",
-      url: "tel:+234797536345",
+      value: "(+234) 803-221-0633",
+      url: "tel:+2348032210633",
     },
   ];
 
