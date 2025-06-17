@@ -4,6 +4,7 @@ import { sfProRegular, sfProSemibold } from "@/app/fonts";
 import device from "@/app/assets/images/device.png";
 import cards from "@/app/assets/images/cards.png";
 import Image from "next/image";
+import Link from 'next/link';
 import { Button } from "../shared/Button";
 
 export const Hero: React.FC = () => {
@@ -24,9 +25,11 @@ export const Hero: React.FC = () => {
               and essential tools to effectively engage with their customers.
             </h2>
             <div className="flex flex-col md:flex-row gap-8 md:gap-[30px] justify-center items-center">
-              <Button className="h-[50px] px-8" variant="dark">
-                Get Started
-              </Button>
+                <Link href="https://app.uverus.com/">
+                  <Button className="h-[50px] px-8" variant="dark">
+                    Get Started
+                  </Button>
+                </Link>
               <Button className="h-[50px]" variant="outlined">
                 Contact Sales
               </Button>
